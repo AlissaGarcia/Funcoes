@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 9 – Filtrar Pares</title>
+</head>
+
+<body>
+    <script> 
+    function filtrarPares(vetor) { 
+        let pares = [] 
+        for (let i = 0; i < vetor.length; i++) { 
+            if (vetor[i] % 2 === 0) pares.push(vetor[i]) } 
+            return pares } 
+            let tamanho = parseInt(prompt("Quantos números deseja inserir no vetor?"))
+             let vetor = [] 
+             for (let i = 0; i < tamanho; i++) { 
+                vetor[i] = parseInt(prompt("Digite o número (" + (i + 1) + "/" + tamanho + "):")) } 
+                alert("Números pares: " + filtrarPares(vetor).join(", ")) </script>
+</body>
+
+</html>

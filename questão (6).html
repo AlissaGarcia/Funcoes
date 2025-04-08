@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 6 – Calculadora</title>
+</head>
+
+<body>
+    <script> 
+    function calculadora(num1, num2, op) { 
+        if (op === "+") return num1 + num2 
+        else if (op === "-") return num1 - num2 
+        else if (op === "*") return num1 * num2 
+        else if (op === "/") return num1 / num2 } 
+        let n1 = parseFloat(prompt("Digite o primeiro número:")) 
+        let n2 = parseFloat(prompt("Digite o segundo número:")) 
+        let oper = prompt("Digite o operador (+, -, *, /):") 
+        alert("O resultado é " + calculadora(n1, n2, oper)) </script>
+</body>
+
+</html>
